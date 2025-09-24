@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <title>리타방앗간 스마트스토어</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>리타방앗간 스마트스토어 바로가기</title>
+
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -12,15 +15,72 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '여기에_내_픽셀_ID'); 
+    fbq('init', '1914061829171347'); // 내 픽셀 ID
     fbq('track', 'PageView');
   </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1914061829171347&ev=PageView&noscript=1"/>
+  </noscript>
   <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #fafafa;
+    }
+    .card {
+      background: #fff;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 480px;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #555;
+      line-height: 1.5;
+    }
+    button {
+      background: #0ea5e9;
+      border: none;
+      color: #fff;
+      padding: 14px 20px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    button:active {
+      transform: translateY(2px);
+    }
+    .sub {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <h1>리타방앗간 스마트스토어로 이동하기</h1>
-  <button onclick="fbq('trackCustom', 'PurchaseClick'); window.location.href='https://smartstore.naver.com/ritas_mall/products/12416380251';">
-    구매하러 가기
-  </button>
+  <div class="card">
+    <h1>리타방앗간 스마트스토어</h1>
+    <p>버튼을 누르면 스마트스토어 상품 페이지로 이동합니다.</p>
+
+    <!-- 전환 이벤트 버튼 -->
+    <button onclick="fbq('trackCustom', 'PurchaseClick'); window.location.href='https://smartstore.naver.com/ritas_mall/products/12416380251?utm_source=instagram&utm_medium=cpc&utm_campaign=landing';">
+      구매하러 가기
+    </button>
+
+    <div class="sub">버튼 클릭은 Meta Ads Manager에 전환 이벤트로 기록됩니다.</div>
+  </div>
 </body>
 </html>
